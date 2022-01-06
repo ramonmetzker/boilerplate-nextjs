@@ -6,7 +6,6 @@ import styles from "../styles/Home.module.css";
  * Página Home: Página inicial do projeto
  * @return {JSX.Element} Componente JSX
  */
-
 export default function Home(): JSX.Element {
   return (
     <div className={styles.container}>
