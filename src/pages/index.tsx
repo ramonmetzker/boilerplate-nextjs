@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Main from "../sections/Home/main";
+import Main from "../sections/pages/Home/Main";
 
 const Home = (): JSX.Element => {
   return (
