@@ -3,7 +3,7 @@
 
 echo '🏗️👷 Estilizando, testando e compilando o projeto antes de realizar o commit'
 
-# Check Prettier standards
+# Valida os padrões do Prettier
 yarn check-format ||
 (
   echo '🤢🤮🤢🤮 MEU DEUS! O seu código está feio!! 🤢🤮🤢🤮
@@ -11,7 +11,7 @@ yarn check-format ||
   false;
 )
 
-# Check ESLint Standards
+# Valida os padrões do ESLint
 yarn check-lint ||
 (
   echo '😤🏀👋😤 Quer quebrar as regras né, malandro?! 😤🏀👋😤
@@ -19,7 +19,7 @@ yarn check-lint ||
   false; 
 )
 
-# Check tsconfig standards
+# Valida os padrões Typescript
 yarn check-types ||
 (
   echo '🤡😂❌🤡 Você não passou na chacagem da tipagem 🤡😂❌🤡
@@ -27,7 +27,7 @@ yarn check-types ||
   false;
 )
 
-# If everything passes... Now we can commit
+# Se tudo passar... Podemos testar a build
 echo '🤔🤔🤔🤔... Hmmm, ok... O código me parece bom... Tentando compilar agora. 🤔🤔🤔🤔'
 
 yarn build ||
@@ -37,5 +37,5 @@ yarn build ||
     false;
 )
 
-# If everything passes... Now we can commit
+# Se tudo passar... Agora podemos fazer o commit
 echo '✅✅✅✅ Você ganhou dessa vez... Vou commitar isso para você. ✅✅✅✅'

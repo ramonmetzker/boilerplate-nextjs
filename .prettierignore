@@ -8,3 +8,5 @@ public
 .vscode
 next.config.js
 tsconfig.json
+babel.config.js
+postcss.config.js
