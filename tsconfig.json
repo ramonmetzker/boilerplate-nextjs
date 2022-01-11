@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"],
+      "@styles/*": ["src/styles/*"],
+      "@layout": ["src/layout/index"]
+    },
     "allowJs": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
@@ -32,6 +38,6 @@
     "**/*.tsx"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules", ".next", "out"
   ]
 }

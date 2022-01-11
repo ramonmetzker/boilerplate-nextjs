@@ -56,17 +56,15 @@ const Main = () => {
               </a>
             </div>
             <div className="col-12 col-lg-6 col-xxl-5">
-              <a
-                href="https://nextjs.org/learn"
-                className="rounded border d-flex flex-column text-center p-2 border-primary text-primary"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <h2 className="fs-5 fw-700">Aprenda &rarr;</h2>
-                <p className="mb-0">
-                  Aprenda mais sobre o Next.js com um quiz interativo.
-                </p>
-              </a>
+              <Link href="/com-graphql">
+                <a className="rounded border d-flex flex-column text-center p-2 border-primary text-primary">
+                  <h2 className="fs-5 fw-700">Página Exemplo &rarr;</h2>
+                  <p className="mb-0">
+                    Página exemplo com requisição e consumo de dados de API
+                    GraphQL.
+                  </p>
+                </a>
+              </Link>
             </div>
             <div className="col-12 col-lg-6 col-xxl-5">
               <Link href="/componentes">

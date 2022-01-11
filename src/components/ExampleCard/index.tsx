@@ -33,7 +33,7 @@ const ExampleCard = ({ launch }: ComponentProps) => {
       </h3>
       <p>{launch.details}</p>
       <span className="fs-5">
-        <Italic>Data </Italic> {dataFormatada}
+        <Italic className="text-secondary">Data </Italic> {dataFormatada}
       </span>
     </CardContainer>
   );

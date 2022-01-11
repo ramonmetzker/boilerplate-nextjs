@@ -10,8 +10,8 @@ const List = ({ launches }: SectionProps) => {
     <section>
       <div className="container">
         <div className="row py-4">
-          {launches.map((launch) => (
-            <div className="col-12" key={launch.id}>
+          {launches.map((launch, index) => (
+            <div className="col-12" key={`launch-card-${launch.id}-${index}`}>
               <ExampleCard launch={launch} />
             </div>
           ))}
