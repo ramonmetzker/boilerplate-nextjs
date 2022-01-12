@@ -5,8 +5,8 @@ const Home = (): JSX.Element => {
   return (
     <>
       <Head>
-        <title>Mobister Boilerplate</title>
-        <meta name="description" content="Criado com NextJS pela Mobister" />
+        <title>Next.js Boilerplate</title>
+        <meta name="description" content="Made with Next.js" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main />
