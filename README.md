@@ -1,64 +1,71 @@
-![Mobister](https://www.mobister.com.br/app/themes/mob/dist/images/logo-mobister.svg)
+<div align="center"><img src="https://qph.fs.quoracdn.net/main-qimg-744f96b18fb3ef81b05512d78b679e25" width="100px" height="100px"></img></div>
 
-# Boilerplate Next.js
+# Next.js Boilerplate
 
-Um boilerplate para projetos em [**Next.js**](https://nextjs.org/) como front-end SPA.
+A base project using Next.js set up with:
 
-O boilerplate foi criado sobre o template [**create-next-app**](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- Typescript
+- Styled-components
+- Bootstrap 5
+- Sass
+- Apollo/client
+- Eslint/Prettier
+- Husky
 
-Para mais informações sobre o processo de desenvolvimento ver [documentação](#documentação).
+## Installation
 
-## Dependências
+To create a new project using this template you can:
 
-- nodejs: `^v14.18.1`
-- yarn: `^1.22.17`
+#### 1 - Create a fresh next-app using
 
----
+```bash
+  npx create-next-app -e https://github.com/ramonmetzker/boilerplate-nextjs
+```
 
-## Instalação local
+or
 
-### Variáveis de ambiente
+```bash
+  yarn create next-app -e https://github.com/ramonmetzker/boilerplate-nextjs
+```
 
-Duplicar o arquivo `.env.example` e renomear para `.env`.
-Definir o valor da variável `GRAPHQL_API` para o endereÃ§o da api.
+#### 2 - Clone this repository
 
-### Produção
+## Runnig the project locally
 
-1. `yarn` para instalar as dependências.
-2. `yarn build` para a geração da pasta .next (conteÃºdo do site).
-3. `yarn start` para iniciar a aplicação.
+Go to the project directory and run `yarn` or `npm install` to install the dependencies and run `yarn prepare` or `npm run prepare` to set up husky in the project, this is essential to keep the standard in your code.
 
-### Desenvolvimento
+The project comes with some scripts:
 
-1. `yarn` para instalar as dependências;
-2. `yarn prepare` para realizar as configurações do husky (Este ponto é importante para a padronização do código).
-3. `yarn dev` para iniciar a aplicação.
+#### To start the development server
 
----
+Run `yarn dev` or `npm run dev`
 
-## Comandos adicionais
+#### To check Typescript rules
 
-Para o desenvolvimento existem mais três comandos auxiliares.
+Run `yarn check-types` or `npm run check-types`
 
-- `yarn lint` validação da padronização do códgio.
-- `yarn type-check` validação do typescript.
-- `yarn format` formatação do código.
+#### To check for Eslint errors
 
-Os dois primeiros são executados de forma automática assim que algum `git commit` for realizado.
+Run `yarn check-lint` or `npm run check-lint`
 
-Caso a validação não tenha sucesso, o commit será interrompido.
+#### To check for Prettier errors
 
-Nesse caso, verifique o log no terminal e execute o `yarn format`.
+Run `yarn check-format` or `npm run check-format`
 
-Caso o format não resolva, realize a correção de forma manual.
+Additionally you can run `yarn format` or `npm run format` to format your code according to the rules set by Prettier/Eslint.
 
-Existe também uma validação, realizada pelo husky, para a padronização dos commits.
-Leia sobre em https://github.com/conventional-changelog/commitlint/#what-is-commitlint
+#### To check for TS, Eslint and Prettier errors all at once
 
-### Commitizen
+Run `yarn test-all` or `npm run test-all`
 
-O projeto vem com o commitizen integrado, o que possibilita a criação dos commits de forma dinâmica e visual. Basta trocar o `git commit` por `yarn commit` para utilizar a interface no terminal, seguir as instruções ao criar o commit.
+### Husky
 
-## Documentação
+This project comes with Husky pre-commit scripts. So every time you try to commit something, husky will run all of those tests mentioned above and will only commit your changes if they all pass. That is why it is essential that you run `yarn prepare` before anything.
 
-[Documentação](https://docs.google.com/document/d/1Ejphhb4UaRdBaUlte2Vvhw4YAuBtywQFvXNItSyauAE)
+## Author
+
+- [@ramonmetzker](https://www.github.com/ramonmetzker)
+
+## Contributing
+
+If you have contributions to make, I am open to pull requests! Also, feel free to contact me for any clarification, suggestion or anything!
