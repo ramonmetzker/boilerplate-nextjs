@@ -7,10 +7,7 @@ type LayoutProps = {
   title?: string;
 };
 
-const Layout = ({
-  children,
-  title = "Mobister - Boilerplate Next.js",
-}: LayoutProps) => {
+const Layout = ({ children, title = "Next.js Boilerplate" }: LayoutProps) => {
   return (
     <>
       <Head>

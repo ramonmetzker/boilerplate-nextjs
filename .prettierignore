@@ -4,9 +4,6 @@ node_modules
 yarn.lock
 package-lock.json
 public
-.eslintrc.js
 .vscode
-next.config.js
+/*.js
 tsconfig.json
-babel.config.js
-postcss.config.js
